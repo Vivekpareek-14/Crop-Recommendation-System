@@ -40,16 +40,20 @@ pip install -r requirements.txt
 ```bash
 streamlit run app.py
 ```
+
 ## 📂 Project Structure
 ```bash
 Crop-Recommendation-System/
-│── app.py               # Streamlit frontend
-│── model/               # Machine Learning model
-│── backend/             # Flask API for prediction
-│── dataset/             # Training dataset
-│── README.md            # Project Documentation
-│── requirements.txt     # Python dependencies
-└── images/              # Screenshots & visuals
+│── app.py                        # Streamlit frontend
+│── crop-recommendation-model.ipynb # Jupyter notebook for training the model
+│── Crop_recommendation.csv        # Dataset for training the model
+│── model.pkl                     # Saved machine learning model
+│── minmaxscaler.pkl              # MinMaxScaler for feature scaling
+│── standscaler.pkl               # StandardScaler for feature scaling
+│── requirements.txt              # Python dependencies
+└── README.md                     # Project Documentation
+
+
 ```
 ## 🎯 How It Works
 #### 1️⃣ Enter the soil and weather parameters in the web interface.
